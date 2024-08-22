@@ -1,10 +1,12 @@
 <template>
     <router-view></router-view>
     <ProductListOne :products="products"></ProductListOne>
+    
 </template>
 
 <script>
 import ProductListOne from "./views/VueX/ProductListOne.vue";
+
 
 export default {
   name: 'App',
@@ -30,5 +32,4 @@ export default {
 </script>
 
 <style>
-
 </style>

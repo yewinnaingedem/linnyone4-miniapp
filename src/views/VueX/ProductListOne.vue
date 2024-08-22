@@ -1,9 +1,14 @@
 <template >
-
     <div>
-        <h1>Product VueX Testing</h1>
+        <router-link :to='"/counter/vue"'>
+            <h1 >Product VueX Testing</h1>
+        </router-link>
         <ul>
-            <li v-for="(product , index) in products" :key="index">{{ product.name }}$ {{ product.price }}</li>
+            <li v-for="(product , index) in products" :key="index">
+                <router-link :to="`/${product.name}`">
+                    {{ product.name }}$ {{ product.price }}
+                </router-link>
+            </li>
         </ul>
     </div>
 
