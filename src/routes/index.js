@@ -1,14 +1,9 @@
 import { createMemoryHistory, createRouter } from 'vue-router'
-import MainComponent from "@/views/App/MainComponent.vue";
+import HomePage from "@/pages/HomePage.vue";
 const routes = [
     {
         path : "/" ,
-        component : MainComponent ,
-    },
-    {
-        path : "/:name",
-        component : import('@/views/App/DetailFruit.vue'),
-        props : true ,
+        component :  HomePage,
     },
     {
         path : "/counter/vue" ,
