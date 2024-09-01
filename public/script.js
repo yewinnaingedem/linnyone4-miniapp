@@ -9,6 +9,8 @@
 	
 **/
 
+import W3Grocery from "@/assets/js/custom";
+
 W3Grocery = function(){
 	
 	"use strict"
@@ -656,11 +658,8 @@ W3Grocery = function(){
 
 /* Document.ready Start */	
 jQuery(document).ready(function() {
-	W3Grocery.init();
-	
-	$('[data-bs-toggle="popover"]').popover();
-    $('.theme-dark .custom-switch input').prop('checked', true);
-	
+	W3Grocery.init() ;
+	console.log('this run fast');
 });
 /* Document.ready END */
 
@@ -683,4 +682,6 @@ jQuery(window).on('resize',function () {
 	
 	W3Grocery.resize();
 });
+
+// export default W3Grocery ;
 /*  Window Resize END */	

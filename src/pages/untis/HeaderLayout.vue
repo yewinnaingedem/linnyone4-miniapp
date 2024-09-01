@@ -5,7 +5,7 @@
 			<div class="container">
 				<div class="header-content">
 					<div class="mid-content">
-						<a href="javascript:void(0);" class="menu-toggler me-2">
+						<a href="" class="menu-toggler me-2">
                             <img src="@/assets/images/main_logo.png" class="main_logo" alt="Logo Image"/>
 						</a>
 					</div>
@@ -20,6 +20,7 @@
 </template>
 
 <script>
+	/* eslint-disable */
     export default {
         name : "HeaderLayout"
     }
